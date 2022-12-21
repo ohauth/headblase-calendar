@@ -24,6 +24,5 @@
 
     <instructions type="install">
         <instruction type="file" />
-        <instruction type="template">templates.tar</instruction>
     </instructions>
 </package>

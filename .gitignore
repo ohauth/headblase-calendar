@@ -1,2 +1,7 @@
 ## Woltlab Sources for Calendar Plugin (ObjectModel Reference)
 woltlab-calendar-src
+
+## Dist Folders
+dist/temp/*
+dist/net.headblast.calendar.eventcreator.tar
+

@@ -1,11 +1,13 @@
 <?php
 
-namespace wcf\system\cronjob;
+namespace wcf\data\headblast\calendar\cronjob;
+
 use wcf\data\cronjob\Cronjob;
 use calendar\data\event\Event;
 use wcf\system\WCF;
+use wcf\system\exception\SystemException;
 
-class HeadblastCalendarCronjob extends AbstractCronjob {
+class HeadblastCalendarCronjob extends AbstractCronjob implements ICronjob {
 
   public function execute(Cronjob $cronjob) {
     parent::execute($cronjob);
