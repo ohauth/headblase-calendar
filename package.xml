@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package name="com.example.package" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd">
     <packageinformation>
-        <packagename>Headblast Appointment Generator</packagename>
-        <packagedescription>Creates our calendar-based appointments</packagedescription>
+        <packagename>Headblast Calendar Cronjob</packagename>
+        <packagedescription>Creates our calendar-based events</packagedescription>
         <version>1.0.0</version>
         <date>2022-12-21</date>
     </packageinformation>
@@ -13,7 +13,9 @@
     </authorinformation>
 
     <requiredpackages>
-        <requiredpackage minversion="5.4.10">com.woltlab.wcf</requiredpackage>
+        <requiredpackage minversion="5.5.7">com.woltlab.wcf</requiredpackage>
+        <?-- TODO: package name just guessed, version seems fine -->
+        <requiredpackage minversion="5.5.7">com.woltlab.calendar</requiredpackage>  
     </requiredpackages>
 
     <excludedpackages>

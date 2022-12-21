@@ -2,7 +2,7 @@
 
 namespace wcf\system\cronjob;
 use wcf\data\cronjob\Cronjob;
-use wcf\data\calendar\Calendar;
+use calendar\data\event\Event;
 use wcf\system\WCF;
 
 class HeadblastCalendarCronjob extends AbstractCronjob {
@@ -10,7 +10,8 @@ class HeadblastCalendarCronjob extends AbstractCronjob {
   public function execute(Cronjob $cronjob) {
     parent::execute($cronjob);
 
-    $event = new \wcf\data\calendar\Calendar::create([
+    // According to the calendar plugin sources it's calendar\data\event\Event
+    $event = new \calendar\data\event\Event::create([
       
     ]);
   }
